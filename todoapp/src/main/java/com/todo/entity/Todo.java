@@ -3,7 +3,7 @@ package com.todo.entity;
 import lombok.Data;
 
 @Data
-public class ToDo {
+public class Todo {
 	
 	private long id;
 	private String title;

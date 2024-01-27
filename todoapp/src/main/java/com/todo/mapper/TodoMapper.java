@@ -10,4 +10,6 @@ import com.todo.entity.Todo;
 public interface TodoMapper {
 
     public List<Todo> selectAll();
+    
+    public void add(Todo todo);
 }

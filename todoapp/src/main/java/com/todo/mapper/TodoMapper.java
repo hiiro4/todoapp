@@ -11,5 +11,12 @@ public interface TodoMapper {
 
     public List<Todo> selectAll();
     
+    public List<Todo> selectIncomplete();
+    
+    public List<Todo> selectComplete();
+    
     public void add(Todo todo);
+    
+    public void update(Todo todo);
+    
 }

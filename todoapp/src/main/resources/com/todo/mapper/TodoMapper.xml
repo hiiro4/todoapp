@@ -9,7 +9,7 @@
   </select>
   
   <select id="selectIncomplete" resultType="com.todo.entity.Todo">
-  	select * from todo_items where done_flg = '0'
+  	select * from todo_items where done_flg ='0'
   </select>
   
   <select id="selectComplete" resultType="com.todo.entity.Todo">
@@ -28,5 +28,9 @@
   		done_flg = #{done_flg}
   		where id = #{id}
   </update>
+  
+  <delete id="delete" parameterType="com.todo.entity.Todo">
+  	delete from todo_items where done_flg = '1'
+  </delete>
   
 </mapper>

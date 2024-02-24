@@ -19,4 +19,6 @@ public interface TodoMapper {
     
     public void update(Todo todo);
     
+    public void delete();
+    
 }
